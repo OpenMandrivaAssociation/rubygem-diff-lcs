@@ -7,7 +7,7 @@ Name:		rubygem-%{rbname}
 Version:	1.1.2
 Release:	3
 Group:		Development/Ruby
-License:	GPLv2+ or Ruby
+License:	GPLv2+ or Ruby or Artistic
 URL:		http://rubyforge.org/projects/ruwiki/
 Source0:	%{rbname}-%{version}.gem
 Patch0:		diff-lcs-1.1.2-add-missing-tag-to-metadata.patch
