@@ -1,7 +1,7 @@
 # Generated from diff-lcs-1.1.2.gem by gem2rpm5 0.6.7 -*- rpm-spec -*-
 %define	rbname	diff-lcs
 
-Summary:	Provides a list of changes that represent the difference between two sequenced collections
+Summary:	Provide a list of changes between two sequenced collections
 Name:		rubygem-%{rbname}
 
 Version:	1.1.2
