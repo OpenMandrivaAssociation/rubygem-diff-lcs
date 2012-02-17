@@ -13,6 +13,7 @@ Source0:	%{rbname}-%{version}.gem
 Patch0:		diff-lcs-1.1.2-add-missing-tag-to-metadata.patch
 BuildRequires:	rubygems 
 BuildArch:	noarch
+%rename		ruby-diff-lcs
 
 %description
 Diff::LCS is a port of Algorithm::Diff that uses the McIlroy-Hunt longest
