@@ -10,6 +10,7 @@ Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://rubyforge.org/projects/ruwiki/
 Source0:	%{rbname}-%{version}.gem
+Patch0:		diff-lcs-1.1.2-add-missing-tag-to-metadata.patch
 BuildRequires:	rubygems 
 BuildArch:	noarch
 
@@ -30,6 +31,9 @@ Documents, RDoc & RI documentation for %{name}.
 
 %prep
 %setup -q
+gunzip metadata.gz
+%patch0 -p1 -b .tag~
+gzip metadata
 
 %build
 %gem_build -f tests
