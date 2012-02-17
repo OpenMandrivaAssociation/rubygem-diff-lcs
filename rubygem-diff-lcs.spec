@@ -48,6 +48,7 @@ gzip metadata
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/htmldiff
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/ldiff
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/diff
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/diff/*.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/diff/lcs
