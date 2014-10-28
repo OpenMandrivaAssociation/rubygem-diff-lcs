@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    1.1.3
-Release:    %mkrel 1
+Release:    3
 Summary:    Provides a list of changes
 Group:      Development/Ruby
 License:    GPLv2+
@@ -39,23 +39,23 @@ tar xmf data.tar.gz
 
 %install
 %gem_install
-rm -rf %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.yardoc
+rm -rf %{buildroot}%{gem_dir}/gems/%{oname}-%{version}/.yardoc
 
 # Fix Wrong interpreter
-sed -i '/^#!/d' %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/lib/diff/{lcs/*.rb,lcs.rb}
+sed -i '/^#!/d' %{buildroot}%{gem_dir}/gems/%{oname}-%{version}/lib/diff/{lcs/*.rb,lcs.rb}
 
 %files
 %{_bindir}/ldiff
 %{_bindir}/htmldiff
-%dir %{ruby_gemdir}/gems/%{oname}-%{version}/
-%{ruby_gemdir}/gems/%{oname}-%{version}/bin
-%{ruby_gemdir}/gems/%{oname}-%{version}/lib
-%{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
+%dir %{gem_dir}/gems/%{oname}-%{version}/
+%{gem_dir}/gems/%{oname}-%{version}/bin
+%{gem_dir}/gems/%{oname}-%{version}/lib
+%{gem_dir}/specifications/%{oname}-%{version}.gemspec
 
 %files          doc
-%doc %{ruby_gemdir}/doc/%{oname}-%{version}
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/docs/COPYING.txt
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/README.rdoc
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/History.rdoc
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/Manifest.txt
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/License.rdoc
+%doc %{gem_dir}/doc/%{oname}-%{version}
+%doc %{gem_dir}/gems/%{oname}-%{version}/docs/COPYING.txt
+%doc %{gem_dir}/gems/%{oname}-%{version}/README.rdoc
+%doc %{gem_dir}/gems/%{oname}-%{version}/History.rdoc
+%doc %{gem_dir}/gems/%{oname}-%{version}/Manifest.txt
+%doc %{gem_dir}/gems/%{oname}-%{version}/License.rdoc
