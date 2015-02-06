@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    1.1.3
-Release:    3
+Release:    4
 Summary:    Provides a list of changes
 Group:      Development/Ruby
 License:    GPLv2+
