@@ -6,7 +6,7 @@ Release:    4
 Summary:    Provides a list of changes
 Group:      Development/Ruby
 License:    GPLv2+
-URL:        http://rubyforge.org/projects/ruwiki/
+URL:        https://rubyforge.org/projects/ruwiki/
 Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRequires: rubygems
 BuildRequires: rubygem(rake)
